@@ -5,23 +5,23 @@ import { Bot, Workflow, Mail, BarChart } from "lucide-react";
 
 const features = [
     {
-        title: "AI Automation",
-        desc: "Automate repetitive business tasks with powerful AI.",
+        title: "AI Development",
+        desc: "We build custom AI solutions including machine learning models, chatbots, and predictive systems tailored to your business.",
         icon: Bot,
     },
     {
-        title: "Smart Workflows",
-        desc: "Design and manage workflows visually and efficiently.",
+        title: "AI Marketing",
+        desc: "Leverage AI to optimize campaigns, generate content, and drive measurable marketing growth.",
         icon: Workflow,
     },
     {
-        title: "Email Automation",
-        desc: "Send intelligent automated emails at the right time.",
+        title: "Custom AI Models",
+        desc: "Deploy machine learning models designed specifically for your workflows and use cases.",
         icon: Mail,
     },
     {
-        title: "Advanced Analytics",
-        desc: "Track performance with real-time insights.",
+        title: "Predictive Analytics",
+        desc: "Make smarter decisions using AI-powered insights and forecasting tools.",
         icon: BarChart,
     },
 ];
@@ -39,7 +39,7 @@ export default function Features() {
                     viewport={{ once: true }}
                     className="text-4xl md:text-5xl font-bold text-white text-center mb-20"
                 >
-                    Powerful Features
+                    Our Services
                 </motion.h2>
 
 

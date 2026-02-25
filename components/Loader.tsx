@@ -32,7 +32,7 @@ export default function Loader() {
                 transition={{ duration: 0.5 }}
                 className="text-white text-2xl font-semibold"
             >
-                Nexod AI Solutions
+                Nexod 
             </motion.div>
 
         </motion.div>

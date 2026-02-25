@@ -67,3 +67,37 @@ html {
   animation: spinSlow 8s linear infinite;
 }
 
+section {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+body::before {
+
+  /* content: ""; */
+  
+  position: fixed;
+  
+  inset: 0;
+  
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  
+  opacity: 0.05;
+  
+  pointer-events: none;
+  
+  z-index: 999;
+  
+  }

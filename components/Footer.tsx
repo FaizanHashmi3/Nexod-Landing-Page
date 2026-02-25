@@ -19,7 +19,7 @@ export default function Footer() {
 
                 <div className="text-white font-semibold text-lg">
 
-                    Nexod AI Solutions
+                    Nexod 
 
                 </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
 
                 <div className="text-white/40 text-sm">
 
-                    © 2026 Nexod AI Solutions. All rights reserved.
+                    © 2026 All rights reserved.
 
                 </div>
 

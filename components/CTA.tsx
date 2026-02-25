@@ -24,7 +24,7 @@ export default function CTA() {
 
                 <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
 
-                    Ready to Transform Your Business?
+                    Ready to Build Your AI Solution?
 
                 </h2>
 
@@ -33,25 +33,35 @@ export default function CTA() {
 
                 <p className="text-white/60 mb-10 text-lg">
 
-                    Join the future of AI automation today. Start building smarter workflows.
-
+                    Partner with Nexod to develop intelligent AI products and accelerate your business growth.
                 </p>
 
 
                 {/* Button */}
 
                 <button className="
-          bg-white
-          text-black
-          px-10
-          py-4
-          rounded-full
-          font-semibold
-          hover:scale-105
-          transition
-        ">
+relative
+px-10 py-4
+rounded-full
+font-semibold
+text-black
+bg-white
+hover:scale-105
+transition
+overflow-hidden
+group
+">
 
-                    Get Started Now
+                    <span className="relative z-10">
+                        Start Your AI Journey
+                    </span>
+
+                    <div className="
+absolute inset-0
+bg-gradient-to-r from-purple-600 to-blue-600
+opacity-0 group-hover:opacity-20
+transition
+"/>
 
                 </button>
 

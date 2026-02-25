@@ -23,22 +23,20 @@ export default function Showcase() {
 
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
 
-                        Build AI Workflows Visually
+                        Build Powerful AI Solutions
 
                     </h2>
 
 
                     <p className="text-white/60 mb-8">
 
-                        Create powerful automation workflows with simple drag and drop interface.
-                        Scale your business operations with cutting edge AI technology.
-
+                        From AI product development to intelligent marketing systems, we help businesses innovate and scale using cutting-edge artificial intelligence.
                     </p>
 
 
                     <button className="bg-white text-black px-6 py-3 rounded-full hover:scale-105 transition">
 
-                        Explore Platform
+                        Explore Our Services
 
                     </button>
 
@@ -49,18 +47,18 @@ export default function Showcase() {
                 {/* RIGHT IMAGE */}
 
                 <motion.div
-                   initial={{ opacity: 0, x: -60 }}
-                   whileInView={{ opacity: 1, x: 0 }}
-                   transition={{ duration: 0.8 }}
-                   viewport={{ once: true }}
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
                 >
 
-                    <Image
-                        src="/images/dashboard.png"
-                        alt="dashboard"
-                        width={600}
-                        height={400}
-                        className="
+                        <Image
+                            src="/images/dashboard.png"
+                            alt="dashboard"
+                            width={600}
+                            height={400}
+                            className="
     rounded-2xl
     border border-white/10
     rotate-[-6deg]
