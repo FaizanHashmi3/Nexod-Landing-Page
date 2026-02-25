@@ -60,14 +60,17 @@ export default function Features() {
                                 viewport={{ once: true }}
                                 whileHover={{ y: -10, scale: 1.03 }}
                                 className="
-                  bg-white/5
-                  border border-white/10
-                  rounded-2xl
-                  p-8
-                  backdrop-blur-xl
-                  hover:border-white/20
-                  transition
-                "
+group
+relative
+bg-white/5
+border border-white/10
+rounded-2xl
+p-8
+backdrop-blur-xl
+hover:border-purple-500/40
+transition
+overflow-hidden
+"
                             >
 
                                 <Icon className="text-white mb-4" size={32} />
@@ -79,7 +82,12 @@ export default function Features() {
                                 <p className="text-white/60 text-sm">
                                     {feature.desc}
                                 </p>
-
+                                <div className="
+absolute inset-0
+bg-gradient-to-r from-purple-600/0 via-purple-600/20 to-blue-600/0
+opacity-0 group-hover:opacity-100
+transition
+"/>
                             </motion.div>
 
                         );

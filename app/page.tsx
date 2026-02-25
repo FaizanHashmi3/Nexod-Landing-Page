@@ -1,3 +1,7 @@
+
+"use client";
+
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
@@ -9,8 +13,13 @@ import Loader from "../components/Loader";
 
 export default function Home() {
   return (
-    <main className="bg-black min-h-screen">
-      
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="bg-black min-h-screen"
+    >
+
       <Loader />
       <CursorGlow />
 
@@ -21,6 +30,6 @@ export default function Home() {
       <CTA />
       <Footer />
 
-    </main>
+    </motion.main >
   );
 }

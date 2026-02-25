@@ -1,8 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+    const [mouse, setMouse] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+
+        const handleMove = (e: MouseEvent) => {
+
+            setMouse({
+                x: (e.clientX - window.innerWidth / 2) / 50,
+                y: (e.clientY - window.innerHeight / 2) / 50,
+            });
+
+        };
+
+        window.addEventListener("mousemove", handleMove);
+
+        return () => window.removeEventListener("mousemove", handleMove);
+
+    }, []);
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
@@ -37,7 +56,14 @@ export default function Hero() {
 
 
             {/* Content */}
-            <div className="text-center z-10 px-6">
+            <motion.div
+                animate={{
+                    x: mouse.x,
+                    y: mouse.y,
+                }}
+                transition={{ type: "spring", stiffness: 50 }}
+                className="text-center z-10 px-6"
+            >
 
                 {/* Heading */}
                 <motion.h1
@@ -93,7 +119,7 @@ export default function Hero() {
                 </motion.div>
 
 
-            </div>
+            </motion.div>
             {/* Scroll Indicator */}
 
             <motion.div
