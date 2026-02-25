@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import HeroParticles from "./HeroParticles";
 
 export default function Hero() {
     const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -25,6 +26,11 @@ export default function Hero() {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
+            <HeroParticles />
+            <div
+                id="hero-origin"
+                className="absolute top-1/2 left-1/2 w-0 h-0"
+            />
             {/* Gradient Background Blob */}
             <motion.div
                 animate={{
